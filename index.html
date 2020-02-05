@@ -1,18 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
-    <div class = "container"></div>
-    <div>Train Name<input></div>
-    <div>Destination<input></div>
-    <div>First Train Time (HH:mm - military time)<input></div>
-    <div>Frequency (min)<input></div>
 
+<body>
+    <table class="container">
+        <tr>
+            <th>Train Name</th>
+            <th>Destination</th>
+            <th>Frequency (min)</th>
+            <th>Next Arrival</th>
+            <th>Minutes Away</th>
+
+        </tr>
+    </table>
+    <div class="form-group">
+        <div>Train Name</div>
+        <br>
+        <input id="trainName">
+        <div>Destination</div>
+        <br>
+        <input id="destination">
+        <div>First Train Time (HH:mm - military time)</div>
+        <br>
+        <input id="firstTime">
+        <div>Frequency (min)</div>
+        <br>
+        <input id="frequency">
+        <br>
+        <button id="submit">Submit</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,10 @@
+.form-group{
+    margin:0 auto;
+    text-align:center;
+    background-color: #e6f2ff;
+    width:500px;
+    border: 2px solid #003366;
+}
+body{
+    background-image:url("../images/repeated-square/repeated-square.png")
+}
