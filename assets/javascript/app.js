@@ -1,7 +1,7 @@
 //Turns input into variable
 var table = $(".container")
 // On click appending all the data to the table
-$("#submit").on("click", function(event){
+$(document).on("click","#submit", function(event){
     var frequency = $("#frequency").val().trim()
 
     var firstTime = $("#firstTime").val().trim()
@@ -9,8 +9,6 @@ $("#submit").on("click", function(event){
     var destination = $("#destination").val().trim()
 
     var name = $("#trainName").val().trim()
-
-    event.preventDefault();
 
     var newCell1 = $("<td>")
 
@@ -30,15 +28,17 @@ $("#submit").on("click", function(event){
 
     
     var newRow = $("<tr>")
-    newCell1.append(newRow)
-    newCell2.append(newRow)
-    newCell3.append(newRow)
-    newCell4.append(newRow)
-    newRow.append(table)
+    newRow.append(newCell1)
+    newRow.append(newCell2)
+    newRow.append(newCell3)
+    newRow.append(newCell4)
+    table.append(newRow)
+    $("#trainName").val("")
+    $("#frequency").val("")
+    $("#firstTime").val("")
+    $("#destination").val("")
+
+
 //This is where I am emptying the input so it can have more information added.
-    frequency.empty()
-    firstTime.empty()
-    destination.empty()
-    name.empty()
 
 })
